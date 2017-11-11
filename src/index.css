@@ -66,5 +66,14 @@ ol, ul {
   font-weight: bold;
 }
 .content {
-  
+
+}
+
+.footer {
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: rgb(197, 197, 197);
+  text-align: center;
+  bottom: 0;
 }
