@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://vukhoa30.github.io/CNM-1412257-caro-reactjs",
   "dependencies": {
-    "gh-pages": "^1.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.17"
@@ -16,5 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }

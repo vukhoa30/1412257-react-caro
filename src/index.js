@@ -204,8 +204,10 @@ class Game extends React.Component {
     } else {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
+
+    let arrow = this.state.isDescending ? '↓' : '↑'
     return (
-      <div>
+      <div class="content">
         <div className="game-config">
           <span className="fixed-size">Chiều rộng:</span><input type="number" placeholder="Chiều rộng" value={this.state.inputWidth} onChange={this.handleChangeWidth} />
           <br />
@@ -221,7 +223,7 @@ class Game extends React.Component {
           </div>
           <div className="game-info">
             <div>
-              <button onClick={this.sort}>Sắp xếp thứ tự</button>
+              <button onClick={this.sort}>Thứ tự bước {arrow}</button>
             </div>
             <div>{status}</div>
             <ol>{moves}</ol>
